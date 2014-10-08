@@ -4,9 +4,9 @@
 }
 
 .container .left {
-	width: 20%;
+	width: 15%;
 	height: 100%;
-	opacity: 1;
+	opacity: .3;
 	transition: all 0.2s ease-in 0s;
 	position: fixed;
 }
@@ -17,11 +17,13 @@
 
 .container .left header {
 	width: 100%;
-	padding: 20% 5% 0 10%;
+	padding: 20% 10% 0 10%;
 }
 
 .container .left header .profilepic img {
 	width: 150px;
+	margin: 0 auto;
+	display: block;
 	border-radius: 50%;
 	transition: all 0.5s ease 0s;
 }
@@ -29,6 +31,10 @@
 .container .left header .profilepic img:hover {
 	-moz-transform:rotate(360deg);
 	-webkit-transform:rotate(360deg);
+}
+
+.container .left header hgroup h1 {
+	text-align: center;
 }
 
 .container .left header a {
@@ -41,7 +47,7 @@
 	color: #a13933;
 }
 .container .mid {
-	width: 80%;
+	width: 85%;
 	min-height: 100%;
 	background: none repeat scroll 0 0 white;
 	position: absolute;
