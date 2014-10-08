@@ -1,0 +1,148 @@
+.container {
+	min-height: 100%;
+	position: relative;
+}
+
+.container .left {
+	width: 20%;
+	height: 100%;
+	opacity: 1;
+	transition: all 0.2s ease-in 0s;
+	position: fixed;
+}
+
+.container .left:hover {
+	opacity: 1;
+}
+
+.container .left header {
+	width: 100%;
+	padding: 20% 5% 0 10%;
+}
+
+.container .left header .profilepic img {
+	width: 150px;
+	border-radius: 50%;
+	transition: all 0.5s ease 0s;
+}
+
+.container .left header .profilepic img:hover {
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+}
+
+.container .left header a {
+	color: #efefef;
+	text-shadow: 4px 3px 0 #333, 9px 8px 0 rgba(0, 0, 0, 0.15);
+	transition: color 0.3s ease 0s;
+}
+
+.container .left header a:hover {
+	color: #a13933;
+}
+.container .mid {
+	width: 80%;
+	min-height: 100%;
+	background: none repeat scroll 0 0 white;
+	position: absolute;
+	right: 0;
+}
+
+
+/* 文章列表 */
+.mid-container {
+	padding: 0 70px 0 40px;
+}
+
+.mid-container .content {
+	width: 100%;
+}
+
+.mid-container .content .item .post {
+	border-bottom: 1px solid #ddd;
+	padding: 30px 0;
+	position: relative;
+}
+
+.mid-container .content .item .post .meta {
+	color: #555;
+	float: right;
+	position: relative;
+	text-align: right;
+	top: 0;
+	width: auto;
+	font-size: 1.26em
+}
+
+.mid-container .content .item .post .meta .date:before {
+	font: 1em/2em FontAwesome;
+	color: #555;
+	margin-right: 10px;
+}
+.mid-container .content .item .post .meta .date {
+	display: block;
+}
+.mid-container .content .item .post .meta .tags:before {
+	font: 1em/2em FontAwesome;
+	color: #999;
+	margin-right: 10px;
+}
+.mid-container .content .item .post .meta .tags {
+	display: block;
+}
+.mid-container .content .item .post .meta .tags a {
+	color: #999;
+	transition:all 0.3s ease 0s;
+}
+
+.mid-container .content .item .post .meta .tags a:hover {
+	color: #666;
+	margin: 0 5px;
+	font-size: 1.4em
+}
+
+
+.mid-container .content .item .post h1.title {
+	margin-bottom: 20px;
+	line-height: 35px;
+	font-weight: 300;
+	font-size: 2.5em;
+	margin-top: 0;
+}
+
+.mid-container .content .item .post h1.title a {
+	color: #333;
+	transition: color 0.3s ease 0s;
+}
+
+.mid-container .content .item .post h1.title a:hover {
+	color: #a13933;
+}
+
+.mid-container .content .item .post .entry-content {
+	margin-left: 0;
+	line-height: 2;
+	text-align: justify;
+}
+
+.mid-container .content .item .post .entry-content p {
+	margin-top: 10px
+}
+
+.mid-container .content .item .post .entry-content .more-link:before {
+	font: 1em/2em FontAwesome;
+	left: 0;
+	position: absolute;
+}
+
+.mid-container .content .item .post .entry-content .more-link {
+	padding-left: 30px;
+	position: relative;
+	display: block;
+	margin-top: 16px;
+	font-size: 1.4em;
+}
+
+.mid-container .content .item .post .entry-content .more-link:hover {
+	text-decoration: underline;
+}
