@@ -27,34 +27,12 @@
 				<div class="mid-container">
 					<div class="content">
 						<div class="item">
-							{% for post in site.posts %}
 							<article class="post">
-								<div class="meta">
-									<div class="fa fa-calendar date">
-										<time datetime="2014-08-11T11:03:00+08:00">
-											Aug 11th, 2014
-										</time>
-									</div>
-									<div class="fa fa-tag tags">
-										<a href="">C++</a>
-										<a href="">C++</a>
-										<a href="">C++</a>
-										<a href="">C++</a>
-									</div>
-								</div>
-								<h1 class="title">
-									<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-								</h1>
+								<h1 class="title">{{ page.title }}</h1>
 								<div class="entry-content">
-									<p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-									测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
-									<a href="{{ site.baseurl }}{{ post.url }}" class="fa-arrow-right more-link">开始阅读</a>
+									{{ content }}
 								</div>
 							</article>
-							{% endfor %}
-						</div>
-						<div class="pages">
-							
 						</div>
 					</div>
 				</div>
