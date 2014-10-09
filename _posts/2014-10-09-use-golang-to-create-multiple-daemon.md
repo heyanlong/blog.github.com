@@ -9,9 +9,7 @@ title: 使用golang创建守候进程
 ###使用
 
 ###代码
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```go
+package main
 ```
 [Fork me on Github](https://github.com/heyanlong/duorun, "Fork me on Github")
