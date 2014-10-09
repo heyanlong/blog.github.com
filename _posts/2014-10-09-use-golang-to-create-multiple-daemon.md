@@ -9,7 +9,7 @@ title: 使用golang创建守候进程
 ###使用
 
 ###代码
-```go
+{% highlight go linenos %}
 package main
 
 import (
@@ -64,5 +64,5 @@ func start(c chan int) {
 	}
 	c <- 0
 }
-```
+{% endhighlight %}
 [Fork me on Github](https://github.com/heyanlong/duorun, "Fork me on Github")
