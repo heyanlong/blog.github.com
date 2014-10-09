@@ -9,7 +9,7 @@ title: 使用golang创建守候进程
 ###使用
 在shell输入
 
-```shell
+```
 go run test.go -n 100 -f /root/test.php
 ```
 
