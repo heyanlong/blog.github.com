@@ -11,5 +11,11 @@ title: 使用golang创建守候进程
 ###代码
 ```go
 package main
+import (
+	"flag"
+	"fmt"
+	"os"
+	"os/exec"
+)
 ```
 [Fork me on Github](https://github.com/heyanlong/duorun, "Fork me on Github")
