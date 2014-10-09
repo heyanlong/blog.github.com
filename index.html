@@ -1,64 +1,36 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/reset.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/base.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/heyanlong.css">
-
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/font-awesome.min.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="left">
-				<header>
-					<div class="profilepic">
-						<img src="{{ site.baseurl}}/images/hyl.jpg">
-					</div>
-					<hgroup>
-						<h1><a href="http://blog.heyanlong.com">头顶火龙果</a></h1>
-						<h5>程序员，年廿一，始从文，连考而不中。 遂习武，练武场上发一矢，中鼓吏，逐之出。 改学IT，自撰一函数，用之，堆栈溢出。。。</h5>
-					</hgroup>
-				</header>
-			</div>
-			<div class="mid">
-				<div class="mid-container">
-					<div class="content">
-						<div class="item">
-							{% for post in site.posts %}
-							<article class="post">
-								<div class="meta">
-									<div class="fa fa-calendar date">
-										<time datetime="2014-08-11T11:03:00+08:00">
-											Aug 11th, 2014
-										</time>
-									</div>
-									<div class="fa fa-tag tags">
-										<a href="">C++</a>
-										<a href="">C++</a>
-										<a href="">C++</a>
-										<a href="">C++</a>
-									</div>
-								</div>
-								<h1 class="title">
-									<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-								</h1>
-								<div class="entry-content">
-									<p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-									测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
-									<a href="{{ site.baseurl }}{{ post.url }}" class="fa-arrow-right more-link">开始阅读</a>
-								</div>
-							</article>
-							{% endfor %}
-						</div>
-						<div class="pages">
-							
-						</div>
-					</div>
+---
+layout: default
+title: 头顶火龙果的博客
+---
+<div class="content">
+	<div class="item">
+		{% for post in site.posts %}
+		<article class="post">
+			<div class="meta">
+				<div class="fa fa-calendar date">
+					<time datetime="2014-08-11T11:03:00+08:00">
+						Aug 11th, 2014
+					</time>
+				</div>
+				<div class="fa fa-tag tags">
+					<a href="">C++</a>
+					<a href="">C++</a>
+					<a href="">C++</a>
+					<a href="">C++</a>
 				</div>
 			</div>
-		</div>
-	</body>
-</html>
+			<h1 class="title">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</h1>
+			<div class="entry-content">
+				<p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+				测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+				<a href="{{ site.baseurl }}{{ post.url }}" class="fa-arrow-right more-link">开始阅读</a>
+			</div>
+		</article>
+		{% endfor %}
+	</div>
+	<div class="pages">
+		
+	</div>
+</div>

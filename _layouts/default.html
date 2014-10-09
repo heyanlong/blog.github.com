@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/reset.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/base.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/heyanlong.css">
+
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/stylesheets/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<header>
+					<div class="profilepic">
+						<img src="{{ site.baseurl}}/images/hyl.jpg">
+					</div>
+					<hgroup>
+						<h1><a href="http://blog.heyanlong.com">头顶火龙果</a></h1>
+						<h5>程序员，年廿一，始从文，连考而不中。 遂习武，练武场上发一矢，中鼓吏，逐之出。 改学IT，自撰一函数，用之，堆栈溢出。。。</h5>
+					</hgroup>
+				</header>
+			</div>
+			<div class="mid">
+				<div class="mid-container">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
