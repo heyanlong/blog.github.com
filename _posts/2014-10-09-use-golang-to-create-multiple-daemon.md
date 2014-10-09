@@ -9,7 +9,7 @@ title: 使用golang创建守候进程
 ###使用
 
 ###代码
-~~~
+~~~go
 package main
 
 import (
