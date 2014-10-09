@@ -7,7 +7,10 @@ title: 使用golang创建守候进程
 ###流程
 是用golang去创建守候进程，每一个进程对应一个golang协程，协程去监听进程。如果发生意外进程退出，则启动一个进程替代异常进程，这样来保证进程数量不会变少。。。真是曲线救国啊~~~
 ###使用
-
+在shell输入
+~~~shell
+go run test.go -n 100 -f /root/test.php
+~~~
 ###代码
 ~~~go
 package main
