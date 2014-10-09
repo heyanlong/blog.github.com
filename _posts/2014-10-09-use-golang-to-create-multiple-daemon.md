@@ -9,9 +9,9 @@ title: 使用golang创建守候进程
 ###使用
 
 ###代码
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
 ```
 [Fork me on Github](https://github.com/heyanlong/duorun, "Fork me on Github")
