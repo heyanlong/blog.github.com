@@ -8,4 +8,4 @@ redcarpet:
     - autolink
     - strikethrough
     - fenced_code_blocks
-pygments: true
+highlighter: pygments
